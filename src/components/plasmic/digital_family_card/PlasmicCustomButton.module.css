@@ -1,0 +1,73 @@
+.button {
+  background: rgba(31, 31, 31, 1);
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  min-width: 160px;
+  transition-property: all;
+  transition-duration: 1s;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  border-radius: 32px;
+  padding: 8px 16px;
+}
+.button > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.button > :global(.__wab_flex-container) > *,
+.button > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.button > :global(.__wab_flex-container) > picture > img,
+.button
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.svg__vvm8 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.pushIt {
+  display: block;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.svg__biZpe {
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 20px;
+  height: 12px;
+  display: block;
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  flex-shrink: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.2s;
+}
+.button:hover .svg__biZpe {
+  transform: translateX(8px) translateY(0px) translateZ(0px);
+}

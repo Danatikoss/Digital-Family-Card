@@ -1,0 +1,29 @@
+{
+  "props": [
+    {
+      "name": "Large copy",
+      "type": "fontsize",
+      "value": "24px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "hTjBEP8FCGAAQfJ6SFrb1N",
+        "id": "CYsxIvTlr9iY"
+      }
+    },
+    {
+      "name": "Unnamed Style Token 2",
+      "type": "color",
+      "value": "currentcolor",
+      "category": "color",
+      "meta": {
+        "projectId": "hTjBEP8FCGAAQfJ6SFrb1N",
+        "id": "00LcC5tSqUtm"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}
