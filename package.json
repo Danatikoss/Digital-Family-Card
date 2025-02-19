@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.334",
+    "@plasmicapp/cli": "^0.1.335",
     "@plasmicapp/react-web": "^0.2.361",
     "@plasmicpkgs/plasmic-embed-css": "^0.1.193",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.210",
