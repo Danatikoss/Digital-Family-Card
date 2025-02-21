@@ -154,6 +154,33 @@ function PlasmicDfc__RenderFunc(props) {
                         projectcss.__wab_text,
                         sty.text__zI7Fg
                       )}
+                      onClick={async event => {
+                        const $steps = {};
+                        $steps["goToSdu"] = true
+                          ? (() => {
+                              const actionArgs = { destination: `/SDU` };
+                              return (({ destination }) => {
+                                if (
+                                  typeof destination === "string" &&
+                                  destination.startsWith("#")
+                                ) {
+                                  document
+                                    .getElementById(destination.substr(1))
+                                    .scrollIntoView({ behavior: "smooth" });
+                                } else {
+                                  location.assign(destination);
+                                }
+                              })?.apply(null, [actionArgs]);
+                            })()
+                          : undefined;
+                        if (
+                          $steps["goToSdu"] != null &&
+                          typeof $steps["goToSdu"] === "object" &&
+                          typeof $steps["goToSdu"].then === "function"
+                        ) {
+                          $steps["goToSdu"] = await $steps["goToSdu"];
+                        }
+                      }}
                     >
                       {"Smart Data Ukimet"}
                     </div>
